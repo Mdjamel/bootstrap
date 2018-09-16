@@ -74,5 +74,132 @@ body {
 
 /* Start Carrousel */
 .carousel-caption {
-  bottom: 100px;
+  bottom: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-right: 20px;
+  padding-left: 20px;
 }
+
+.carousel-indicators {
+  bottom: 0px;
+}
+.carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #eee;
+}
+
+.carousel-indicators .active {
+  background-color: #e41b17;
+  border: 1px solid #871818;
+  height: 22px;
+  width: 22px;
+}
+
+/* End Ovverriding Bootstrap*/
+
+/* Start Section About */
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about .lead {
+  color: #888;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.about h1 {
+  font-weight: bold;
+}
+.about h1 span,
+.about h3 span {
+  color: #e41b17;
+}
+/* End Section About */
+
+/* Start Section Features */
+.features {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.features h1 {
+  margin-bottom: 50px;
+}
+.features .feat {
+  margin-bottom: 30px;
+}
+
+.features .feat p {
+  line-height: 2em;
+}
+
+.features .feat span.glyphicon {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+/* End Section Features */
+
+/* Start Testimonial Section */
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonials h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.testimonials p.lead {
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+
+.testimonials span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e41b17;
+}
+
+.testimonials .carousel-inner {
+  min-height: 160px;
+}
+
+.testimonials .carousel-indicators {
+  position: static;
+  width: 100%;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.testimonials .carousel-indicators li {
+  text-indent: 0;
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+  border: 2px solid #fff;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.testimonials .carousel-indicators li.active {
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  background: none;
+  border: 2px solid #e41b17;
+}
+.testimonials .carousel-indicators li img {
+  max-width: 100%;
+}
+
+/* End  Testimonh ial Section */
