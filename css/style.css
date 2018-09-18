@@ -1,8 +1,18 @@
+/* @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css); */
+
 body {
   padding-top: 70px;
-  height: 6000px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+.lead {
+  /* font-family: "Droid Arabic Kufi", sans-serif; */
+  font-family: "Eczar", sans-serif;
+}
 /***** Start Overriding Bootstrap *****/
 
 /* Min Navbar*/
@@ -420,7 +430,7 @@ body {
 /* Start Section Our Clients */
 .ourclient {
   background: #eee;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
@@ -444,7 +454,6 @@ body {
   background: #333;
   color: #aaa;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .footer a {
@@ -490,4 +499,37 @@ body {
   opacity: 1;
 }
 
+.footer .img-thumbnail {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #444;
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  background-color: #111;
+  color: #eee;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.footer .copyright span {
+  color: #0895d1;
+}
+
 /* End Footer */
+
+/* Start Media Query */
+@media (max-width: 767px) {
+  h1 {
+    color: red;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    color: blue;
+    font-size: 100px;
+  }
+}
+/* End Media Query */
