@@ -15,16 +15,43 @@ h5,
 }
 /***** Start Overriding Bootstrap *****/
 
+/* Start Tool Box */
+.optionbox {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  z-index: 9999;
+}
+
+.optionbox .coloroption {
+  float: left;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  display: none;
+}
+
+.optionbox .coloroption ul li {
+  width: 20px;
+  height: 20px;
+  background: #f00;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.optionbox .gearcheck {
+  padding: 5px;
+
+  color: #fff;
+  cursor: pointer;
+}
+
+/* End Tool Box */
+
 /* Min Navbar*/
 .navbar {
   min-height: 70px;
-}
-
-/* Active Link */
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: #e41b17;
 }
 
 /* Navbar Link */
@@ -42,13 +69,9 @@ h5,
   line-height: 40px;
 }
 
-.navbar-inverse .navbar-brand span {
-  color: #e41b17;
-}
-
 .dropdown-menu {
   background-color: #333;
-  border-top: 3px solid #e41b17;
+
   min-width: 200px;
 }
 
@@ -68,7 +91,6 @@ h5,
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  background-color: #e41b17;
   color: #fff;
   padding-left: 25px;
 }
@@ -100,7 +122,6 @@ h5,
 }
 
 .carousel-indicators .active {
-  background-color: #e41b17;
   border: 1px solid #871818;
   height: 22px;
   width: 22px;
@@ -123,10 +144,7 @@ h5,
 .about h1 {
   font-weight: bold;
 }
-.about h1 span,
-.about h3 span {
-  color: #e41b17;
-}
+
 /* End Section About */
 
 /* Start Section Features */
@@ -172,7 +190,6 @@ h5,
 .testimonials span {
   font-size: 18px;
   font-weight: bold;
-  color: #e41b17;
 }
 
 .testimonials .carousel-inner {
@@ -206,7 +223,6 @@ h5,
   height: 80px;
   opacity: 1;
   background: none;
-  border: 2px solid #e41b17;
 }
 .testimonials .carousel-indicators li img {
   max-width: 100%;
@@ -465,7 +481,6 @@ h5,
 }
 
 .footer h3 {
-  color: #0895d1;
   letter-spacing: 1px;
   margin: 30x 0 20px;
 }
@@ -513,23 +528,4 @@ h5,
   font-size: 18px;
 }
 
-.footer .copyright span {
-  color: #0895d1;
-}
-
 /* End Footer */
-
-/* Start Media Query */
-@media (max-width: 767px) {
-  h1 {
-    color: red;
-  }
-}
-
-@media (min-width: 768px) {
-  h1 {
-    color: blue;
-    font-size: 100px;
-  }
-}
-/* End Media Query */
